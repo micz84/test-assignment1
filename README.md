@@ -1,6 +1,6 @@
 # Assignmet 1
 
-It was an assignment I did two years ago.
+It was an assignment I did in 2022 as a test assignment.
 
 I received a description of a level layout and game rules.
 
