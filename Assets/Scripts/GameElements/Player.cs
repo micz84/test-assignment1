@@ -56,7 +56,7 @@ namespace GameElements
             if (!_IsOnGround && CheckTouchBox(_WallCheckOffset, _WallCheckSize))
                 dir = 0; // not allow to move in direction of wall when wall is touched to prevent sticking
             var vector = _PlayerMovementSettings.MovementDirection * (dir * _PlayerMovementSettings.Speed);
-            _Rigidbody.velocity = new Vector3(vector.x, _Rigidbody.velocity.y, vector.z);
+            _Rigidbody.linearVelocity = new Vector3(vector.x, _Rigidbody.linearVelocity.y, vector.z);
         }
 
         public void Jump()

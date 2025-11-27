@@ -69,7 +69,7 @@ namespace GameElements
                 if (_Settings.WaypointsProvider.UpdateCurrentWayPoint(ref _CurrentWaypointIndex, ref _Direction, out Vector3 movementVector))
                     _MovementVector = movementVector;
             }
-            _Rigidbody.velocity = _MovementVector * _MovementSpeed;
+            _Rigidbody.linearVelocity = _MovementVector * _MovementSpeed;
         }
 
         private void OnValidate()
